@@ -1,0 +1,99 @@
+/* signup.css */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #a777e3, #6e8efb);
+  padding: 20px;
+  margin: 0;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+.auth-form {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 100%;
+  max-width: 400px;
+}
+
+.auth-form h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.auth-form input,
+.auth-form select {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.auth-form input:focus,
+.auth-form select:focus {
+  outline: none;
+  border-color: #a777e3;
+}
+
+.auth-form button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #a777e3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.auth-form button:hover {
+  background-color: #9561d0;
+}
+
+/* New styles for phone input */
+.phone-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.phone-input input[type="text"] {
+  width: 70px;
+  flex-shrink: 0;
+}
+
+.phone-input input[type="tel"] {
+  flex-grow: 1;
+}
+
+@media (max-width: 480px) {
+  .auth-form {
+    padding: 1.5rem;
+  }
+  
+  .auth-form h2 {
+    font-size: 1.75rem;
+  }
+  
+  .phone-input {
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .phone-input input[type="text"],
+  .phone-input input[type="tel"] {
+    width: 100%;
+  }
+}

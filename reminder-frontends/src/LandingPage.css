@@ -1,0 +1,85 @@
+.landing-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw; /* Ensures background fills the entire width */
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    padding: 20px;
+    margin: 0; /* Reset margin to avoid any extra space */
+    overflow-x: hidden; /* Ensures no horizontal scrolling */
+}
+
+  .landing-content {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    text-align: center;
+    max-width: 600px;
+  }
+  
+  .landing-content h1 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .landing-content p {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .auth-options {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .auth-button {
+    padding: 0.75rem 2rem;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .auth-button.login {
+    background-color: #6e8efb;
+    color: white;
+  }
+  
+  .auth-button.login:hover {
+    background-color: #5a7ce7;
+  }
+  
+  .auth-button.signup {
+    background-color: #a777e3;
+    color: white;
+  }
+  
+  .auth-button.signup:hover {
+    background-color: #9561d0;
+  }
+  
+  @media (max-width: 768px) {
+    .landing-content {
+      padding: 2rem;
+    }
+  
+    .landing-content h1 {
+      font-size: 2rem;
+    }
+  
+    .landing-content p {
+      font-size: 1rem;
+    }
+  
+    .auth-button {
+      padding: 0.6rem 1.5rem;
+      font-size: 1rem;
+    }
+  }
